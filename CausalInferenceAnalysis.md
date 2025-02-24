@@ -234,7 +234,7 @@ nswdata$propensity <- p
 boxplot(nswdata$propensity ~ treatment)
 ```
 
-![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](<Figures/unnamed-chunk-5-1.png>)
 
 ### Distance Matrix
 
@@ -378,19 +378,20 @@ summary(matched_data, un = FALSE)
 plot(matched_data, type = "jitter", interactive = FALSE)
 ```
 
-![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](<Figures/unnamed-chunk-9-1.png>)
 
 ``` r
 plot(matched_data, type = "density", interactive = FALSE)
 ```
 
-![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-9-2.png)<!-- -->![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-9-3.png)<!-- -->
+![](<Figures/unnamed-chunk-9-2.png>)
+![](<Figures/unnamed-chunk-9-3.png>)
 
 ``` r
 plot(summary(matched_data))
 ```
 
-![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-9-4.png)<!-- -->
+![](<Figures/unnamed-chunk-9-4.png>)
 
 ``` r
 library(MatchIt)
@@ -454,19 +455,20 @@ summary(matched_data, un = FALSE)
 plot(matched_data, type = "jitter", interactive = FALSE)
 ```
 
-![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](<Figures/unnamed-chunk-10-1.png>)
 
 ``` r
 plot(matched_data, type = "density", interactive = FALSE)
 ```
 
-![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-10-3.png)<!-- -->
+![](<Figures/unnamed-chunk-10-2.png>)
+![](<Figures/unnamed-chunk-10-3.png>)
 
 ``` r
 plot(summary(matched_data))
 ```
 
-![](CausalInferenceAnalysis_files/figure-gfm/unnamed-chunk-10-4.png)<!-- -->
+![](<Figures/unnamed-chunk-10-4.png>)
 
 # Estimating the treatment effect
 
@@ -624,7 +626,7 @@ plot.dataframe=data.frame(abs.stand.diff=c(abs.stand.diff.before,abs.stand.diff.
 ggplot(plot.dataframe,aes(x=abs.stand.diff,y=covariates))+geom_point(size=5,aes(shape=factor(type)))+scale_shape_manual(values=c(4,1))+geom_vline(xintercept=c(.1,.2),lty=2)
 ```
 
-![](CausalInferenceAnalysis_files/figure-gfm/Love%20plot-1.png)<!-- -->
+![](<Figures/Love%20plot-1.png>)
 
 ``` r
 # Put data into format for senfmCI function
